@@ -1,5 +1,7 @@
 import React from "react";
 import SignedInLinks from "./SignedInLinks";
+import SignedOutLinks from "./SignedOutLinks";
+
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -10,6 +12,7 @@ export default function Navbar() {
           React-Redux
         </Link>
         <SignedInLinks />
+        <SignedOutLinks />
       </div>
     </nav>
   );
