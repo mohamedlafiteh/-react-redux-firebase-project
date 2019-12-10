@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
-const firebaseConfig = {
+const config = {
   apiKey: "AIzaSyDAq1klshvtgdjt33ecKL9gFPgKEczhC-Q",
   authDomain: "react-redux-project-c710f.firebaseapp.com",
   databaseURL: "https://react-redux-project-c710f.firebaseio.com",
@@ -12,8 +12,7 @@ const firebaseConfig = {
   appId: "1:737259164278:web:a6d5dcca1daf8063fe4557",
   measurementId: "G-CZNLT6QZQS"
 };
-
-firebase.intializeApp(firebaseConfig);
+firebase.initializeApp(config);
 firebase.firestore().settings({ timestampsInSnapshots: true });
 
 export default firebase;
